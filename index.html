@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us" >
+<head>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+      navigator.serviceWorker.register('sw.js')
+      .then(function() { /*console.log("Service Worker Registered.");*/ });
+      });
+    }  
+  </script>
+  <meta charset="utf-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#7b7b7b">
+  <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Niketree">
+  <meta name="application-name" content="Niketree">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-TileImage" content="assets/img/favicon/mstile-144x144.png">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link href="assets/img/splashscreen/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="assets/img/splashscreen/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="assets/img/splashscreen/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="assets/img/splashscreen/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="assets/img/splashscreen/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="assets/img/splashscreen/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+  <link href="assets/img/splashscreen/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="assets/img/splashscreen/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="assets/img/splashscreen/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <link href="assets/img/splashscreen/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  <title>Linktree UX by Fred Rocha @fredsrocha</title>
+  <meta name="description" content="This is my UX version of the @Linktree_ for advertisers of products and services. Just a POC, lorem ipsum dolor sit amet. Just fun @Nike">
+  <meta name="keywords" content="fredsrocha, niketree, linktree, ux, nike, pwa">
+  <meta property="fb:app_id" content="12345678910">
+  <meta property="og:url" content="https://niketree.jusblog.com">
+  <meta property="og:type" content="Website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Niketree">
+  <meta property="og:title" content="Niketree">
+  <meta property="og:description" content="This is my UX version of the @Linktree_ for advertisers of products and services. Just a POC, lorem ipsum dolor sit amet. Just fun @Nike">
+  <meta property="og:image" content="https://niketree.jusblog.com/assets/img/og/20210405.jpg">
+  <meta property="og:image:type" content="image/jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="627">
+  <meta property="og:image:alt" content="This is my UX version of the @Linktree_ for advertisers of products and services. Just a POC, lorem ipsum dolor sit amet. Just fun @Nike">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@jusblogsite">
+  <meta name="twitter:creator" content="@FredSRocha">
+  <meta name="twitter:title" content="Niketree">
+  <meta name="twitter:description" content="This is my UX version of the @Linktree_ for advertisers of products and services. Just a POC, lorem ipsum dolor sit amet. Just fun @Nike">
+  <meta name="twitter:image" content="https://niketree.jusblog.com/assets/img/og/20210405.jpg">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="loading-bar" class="black"></div>
+  <main>
+    <div id="profile" class="wrapper">
+      <div class="image-cropper avatar header circle">
+        <a href="tel:12345678900" rel="nofollow" class="btn-call black">
+          <div class="btn-call__ico">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+        </a>
+      </div>
+      <header>
+        <h1>@fredsrocha</h1>
+        <p>This is my UX version of the <a href="https://twitter.com/Linktree_">@Linktree_</a> for advertisers of products and services. Just a POC, lorem ipsum dolor sit amet. Just fun <a href="https://twitter.com/Nike">@Nike</a> 🤭</p>
+      </header>
+      <div class="wrapper-body">
+        <div class="inside-wrapper">
+          <div class="container black">
+            <div class="container-item">
+              <a href="https://www.nike.com.br/tenis-nike-air-vapormax-evo-masculino-153-169-223-291993?gridPosition=A1">
+                <img src="./assets/img/item/thumbnail/1.jpg" alt="Linktree UX by Fred Rocha @fredsrocha" />
+              </a>
+            </div>
+            <div class="container-item">
+              <a href="https://www.nike.com.br/tenis-nike-metcon-6-feminino-1-16-220-288966">
+                <img src="./assets/img/item/thumbnail/2.jpg" alt="Linktree UX by Fred Rocha @fredsrocha" />
+              </a>
+            </div>
+            <div class="container-item">
+              <a href="https://www.nike.com.br/tenis-nike-zoom-fly-3-masculino-153-169-224-305870?gridPosition=E2">
+                <img src="./assets/img/item/thumbnail/3.jpg" alt="Linktree UX by Fred Rocha @fredsrocha" />
+              </a>
+            </div>
+            <div class="container-item">
+              <a href="https://www.nike.com.br/tenis-nike-renew-in-season-tr-10-feminino-1-16-220-328008?gridPosition=G2">
+                <img src="./assets/img/item/thumbnail/4.jpg" alt="Linktree UX by Fred Rocha @fredsrocha" />
+              </a>
+            </div>
+            <div class="container-item">
+              <a href="https://www.nike.com.br/tenis-pg-5-unissex-153-169-222-314008?gridPosition=I3">
+                <img src="./assets/img/item/thumbnail/5.jpg" alt="Linktree UX by Fred Rocha @fredsrocha" />
+              </a>
+            </div>
+            <div class="container-item">
+              <a href="https://www.nike.com.br/tenis-nike-air-zoom-pegasus-38-feminino-1-16-214-315125?gridPosition=A2">
+                <img src="./assets/img/item/thumbnail/6.jpg" alt="Linktree UX by Fred Rocha @fredsrocha" />
+              </a>
+            </div>
+            <div class="container-item">
+              <a href="https://www.nike.com.br/">
+                <img src="./assets/img/item/thumbnail/brand.jpg" alt="Linktree UX by Fred Rocha @fredsrocha" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social-bar">
+        <a href="https://api.whatsapp.com/send?text=Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.&phone=1234567890" class="item"><i class="fab fa-whatsapp fa-2x"></i></a>
+        <a href="https://www.instagram.com/nike/" class="item"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="uber://m.uber.com/ul/" class="item" style="color: #000000;"><i class="fab fa-uber fa-2x"></i></a>
+        <a href="https://www.youtube.com/user/nike" class="item"><i class="fab fa-youtube fa-2x"></i></i></a>
+        <a href="mailto:email@example.com?subject=Example%20e-mail&body=Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit." class="item"><i class="far fa-envelope fa-2x"></i></a>
+      </div>
+      <footer>
+        <p>
+          <a href="https://twitter.com/fredsrocha"><i class="fab fa-twitter"></i> Twitter</a> &bull; <a href="https://www.linkedin.com/in/fredsrocha"><i class="fab fa-linkedin"></i> LinkedIn</a> &bull; <a href="https://github.com/FredSRocha/Niketree"><i class="fab fa-github-alt"></i> GitHub</a>
+        </p>
+      </footer>
+    </div>
+  </main>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
